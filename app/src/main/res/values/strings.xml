@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">QQ</string>
+    <string name="onoff"></string>
+    <string name="price"></string>
+    <string name="totalprice">Total：0</string>
+    <string name="tx_name">姓名：</string>
+    <string name="name_hint">請輸入姓名</string>
+    <string name="tx_address">地址：</string>
+    <string name="address_hint">請輸入地址</string>
+    <string name="tx_phone">電話：</string>
+    <string name="phone_hint">請輸入電話</string>
+    <string name="tx_ps">備註：</string>
+    <string name="ps_hint">請輸入備註</string>
+</resources>

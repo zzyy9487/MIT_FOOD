@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/img_bg2"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg1" />
+
+    <ImageView
+        android:id="@+id/img_item2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/i1" />
+
+    <ImageView
+        android:id="@+id/img_title2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toEndOf="@+id/img_item2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/t1" />
+
+    <TextView
+        android:id="@+id/pricetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@id/checknumbertext"
+        app:layout_constraintStart_toStartOf="@id/minusbtn"
+        app:layout_constraintEnd_toEndOf="@id/plusbtn"/>
+
+    <ImageButton
+        android:id="@+id/minusbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="7dp"
+        android:background="#00000000"
+        android:contentDescription="@string/onoff"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/img_bg2"
+        app:layout_constraintStart_toEndOf="@+id/img_title2"
+        app:srcCompat="@drawable/minus" />
+
+    <ImageButton
+        android:id="@+id/plusbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#00000000"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="7dp"
+        android:contentDescription="@string/onoff"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/img_bg2"
+        app:layout_constraintStart_toEndOf="@+id/checknumbertext"
+        app:srcCompat="@drawable/plus" />
+
+    <TextView
+        android:id="@+id/checknumbertext"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="7dp"
+        android:text="1"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/img_bg2"
+        app:layout_constraintStart_toEndOf="@+id/minusbtn"
+        tools:layout_editor_absoluteY="44dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
